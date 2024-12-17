@@ -1,0 +1,439 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* #8b3dff - იასამნისფერი*/
+/* rgb(30, 41, 59) - შავი */
+/* rgb(100, 116, 139) - ღია ნაცრისფერი */
+
+body {
+  font-family: "Public Sans", sans-serif;
+}
+
+
+/* ------- general start --------- */
+
+button {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+
+}
+
+.span-purple-text {
+  color: #7634d9;
+}
+
+.black-text {
+  color: rgb(30, 41, 59);
+  font-size: 30px;
+}
+
+.opacity-text {
+  color: rgb(30, 41, 59);
+  opacity: 0.6;
+}
+
+.gray-text {
+  opacity: 0.4;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.btn-purple {
+  background-color: #8b3dff;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 16px;
+  transition: 0.2s;
+}
+
+.link-text {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+/* ------- general end --------- */
+
+
+.container {
+  max-width: 1320px;
+  margin: auto;
+}
+
+/* nav start */
+.navbar-container {
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+.navbar-list ul {
+  gap: 20px;
+  list-style: none;
+  display: flex;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #475569;
+}
+
+
+.navbar-btn-container {
+  display: flex;
+  gap: 8px;
+
+}
+
+.btn-light {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  background-color: #f1f5f9;
+  color: #64748b;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: 0.2s;
+
+}
+
+.btn-light:hover {
+  background-color: #e2e8f0;
+  color: #334155;
+}
+
+
+.btn-purple:hover {
+  color: #fff;
+  background-color: #7634d9;
+}
+
+/* nav end */
+
+
+/* hero start */
+.hero {
+  background-color: #8b3dff;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  text-align: center;
+
+}
+
+.hero h1 {
+  font-size: 50px;
+}
+
+.hero-heading {
+  margin-top: 40px;
+}
+
+.hero-description {
+  width: 600px;
+}
+
+.hero-avatar-image {
+  border-radius: 100%;
+  margin-bottom: -100px;
+  width: 180px;
+  border: 3px solid white;
+  margin-top: 30px;
+}
+
+/* hero end */
+
+
+/* avatart start */
+.portfolio-section {
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 110px;
+}
+
+.portfolio-text {
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+
+.portfolio-section h2 {
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+
+.experience-text {
+  margin-bottom: 50px;
+}
+
+/* avatart end */
+
+
+
+/* portfolio cards start */
+.portfolio-cards-section-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 30px;
+
+}
+
+.portfolio-cards-section img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.portfolio-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 20px;
+  padding: 24px 24px 0px;
+}
+
+.portfolio-card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  line-height: 1.4;
+}
+
+.badge-container {
+  display: flex;
+  gap: 10px;
+  margin: 30px 0px;
+}
+
+
+.badge {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 0.35em 0.65em;
+  color: #334155;
+  font-weight: 700;
+  font-size: 0.75em;
+  margin-bottom: 20px;
+}
+
+/* portfolio cards end */
+
+
+
+/* programing languages start */
+.programming-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 200px;
+}
+
+
+.programing-cards-contianer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 765px;
+}
+
+.programing-card {
+  padding: 24px;
+  border-radius: 15px;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.programing-card-html {
+  background-color: #fce7ea;
+}
+
+.programing-card-react {
+  background-color: rgba(0, 157, 189, 0.1);
+  margin-top: 30px;
+}
+
+.programing-card-figma {
+  margin-bottom: 30px;
+  background-color: #fff9e5;
+}
+
+.programing-card-nodejs {
+  background-color: #e5f2e5;
+}
+
+.programing-text-content {
+  width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 26px;
+
+}
+
+
+.link-light-blue {
+  color: #3dd5f3;
+}
+
+.link-red {
+  color: rgb(219, 20, 54);
+}
+
+.link-yellow {
+  color: #ffcb2f;
+}
+
+.link-green {
+  color: #03810a;
+}
+
+
+
+/* programing languages end */
+
+
+
+/* about me start */
+.aboutme-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  gap: 40px;
+}
+
+.about-me-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 600px;
+  margin: auto;
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  text-align: left;
+}
+
+
+.first-text {
+  width: 500px;
+}
+
+.second-text {
+  width: 500px;
+}
+
+/* about me end */
+
+
+
+/* proud-of-results start */
+
+.testimonial-section {
+  margin-bottom: 150px;
+}
+
+.testimonial-container {
+  display: flex;
+  gap: 100px;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+.testimonial-text {
+  letter-spacing: .1em;
+  font-size: .875em;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.proud-of-results {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.proud-of-results h2 {
+  font-size: 30px;
+}
+
+.achievements-container {
+  display: flex;
+  gap: 200px;
+
+}
+
+.achievements-container h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.achievements-container p {
+  font-size: 16px;
+}
+
+.testimonial-box-section {
+  display: flex;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.testimonial-box {
+  background-color: #e5f2e5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px, 12px black;
+}
+
+.testimonial-box p {
+  line-height: 1.6;
+}
+
+.testimonial-box h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+
+/* proud-of-results end */
+
+
+
+
+
+/* ------------------- */
+@media only screen and (max-width: 800px) {
+
+  .navbar-list {
+    display: none;
+  }
+
+  .navbar-btn-container {
+    display: none;
+  }
+}
