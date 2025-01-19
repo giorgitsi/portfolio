@@ -9,6 +9,19 @@ import react from "./assets/react.svg"
 import figma from "./assets/figma.svg"
 import nodejs from "./assets/nodejs.svg"
 import { FaArrowRightLong } from "react-icons/fa6";
+import rocket from "./assets/Rocket.svg"
+import purpleLump from "./assets/LightbulbFilament.svg"
+import BracketsCurly from "./assets/BracketsCurly.svg"
+import PencilCircle from "./assets/PencilCircle.svg"
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdOutlineMarkEmailRead } from "react-icons/md";
+import { FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+
+
 function App() {
 
 
@@ -155,6 +168,43 @@ function App() {
       {/* about me end */}
 
 
+      {/* my procces start */}
+      <section className='engagement-section container'>
+        <div className='engagement-card-left'>
+          <h2 className='black-text'>My process of Engagement</h2>
+          <p className='opacity-text'>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus. Aenean eu leo quam.</p>
+        </div>
+
+        <div className='engagement-cards-section'>
+
+          <div className='engagement-card'>
+            <img src={purpleLump} alt="" />
+            <h3 className='black-text'>Ideation</h3>
+            <p className='opacity-text'>We craft a plan aligned with your business objectives, submit a comprehensive proposal.</p>
+          </div>
+
+          <div className='engagement-card'>
+            <img src={PencilCircle} alt="" />
+            <h3 className='black-text'>Ideation</h3>
+            <p className='opacity-text'>We craft a plan aligned with your business objectives, submit a comprehensive proposal.</p>
+          </div>
+
+          <div className='engagement-card'>
+            <img src={BracketsCurly} alt="" />
+            <h3 className='black-text'>Ideation</h3>
+            <p className='opacity-text'>We craft a plan aligned with your business objectives, submit a comprehensive proposal.</p>
+          </div>
+
+          <div className='engagement-card'>
+            <img src={rocket} alt="" />
+            <h3 className='black-text'>Ideation</h3>
+            <p className='opacity-text'>We craft a plan aligned with your business objectives, submit a comprehensive proposal.</p>
+          </div>
+        </div>
+      </section>
+      {/* my procces end */}
+
+
       {/* testimoniol start */}
 
       <section className='testimonial-section container'>
@@ -222,6 +272,183 @@ function App() {
 
       {/* testimoniol end */}
 
+
+
+      {/* Contacts start */}
+
+      <section className='contacts'>
+
+        <div className='contacts-container container'>
+
+          <div className='send-contacts'>
+            <h3 className='black-text'>Interested in working together? Let’s talk. Just Say Hi!</h3>
+
+            <div className='input-container your-name-input'>
+              <label className='opacity-text' htmlFor="">What’s your name</label>
+              <input placeholder='Name' type="text" />
+            </div>
+
+            <div className='input-container your-email-input'>
+              <label className='opacity-text' htmlFor="">Email Address</label>
+              <input placeholder='Email' type="email" />
+            </div>
+
+            <div className='input-container your-describe-input'>
+              <label className='opacity-text' htmlFor="">Describe your project</label>
+              <textarea placeholder='Write the infotmation about your project.' name="" id="" rows={4}></textarea>
+              <button className='btn-purple'>Contact me</button>
+            </div>
+
+          </div>
+
+
+
+          <div className='main-contacts'>
+            <img className='main-contacts-avatar-img' src={ProfileImg} alt="" />
+
+            <div className='contacts-avatar-name'>
+              <h3 className='black-text'>John Carter</h3>
+              <p className='opacity-text'>Head of Engineering at Google</p>
+            </div>
+
+            {/* ------------------------- */}
+
+            <div className='contacts-location contacts-card'>
+              <FaLocationDot className='opacity-text' />
+
+              <div className='contacts-content '>
+                <p className='contacts-black-text'>Address</p>
+                <p className='opacity-text'>1802 Ruckman RoadOklahoma City, OK 73116</p>
+              </div>
+            </div>
+
+
+            <div className='contacts-number contacts-card' >
+              <FaPhoneAlt className='opacity-text' />
+
+
+              <div className='contacts-content '>
+                <p className='contacts-black-text'>Phone</p>
+                <p className='opacity-text'>00 (123) 456 78 90 00 (987) 654 32 10</p>
+              </div>
+            </div>
+
+
+
+            <div className='contacts-email contacts-card'>
+              <MdOutlineMarkEmailRead className='opacity-text' />
+
+
+              <div className='W '>
+                <p className='contacts-black-text'>E-mail:</p>
+                <p className='opacity-text'>blocktheme@example.com helloteam@example.com</p>
+              </div>
+            </div>
+
+
+            <div className='contact-apps-container'>
+
+              <a href=""><FaInstagram /></a>
+              <a href=""><FaTwitter /></a>
+              <a href="https://www.youtube.com/"><FaYoutube /></a>
+              <a href=""><FaLinkedin /></a>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      {/* Contacts end */}
+
+
+      <footer>
+
+        {/* info start */}
+        <section className='information'>
+          <div className='information-container container'>
+
+            <div className='info-card'>
+              <h2 className='black-text'>Service</h2>
+              <ul>
+                <li><a href="">Web App Development</a></li>
+                <li><a href="">Front End Development</a></li>
+                <li><a href="">MVP Development</a></li>
+                <li><a href="">MVP Development</a></li>
+                <li><a href="">Digital Marketing</a></li>
+              </ul>
+            </div>
+
+            <div className='info-card'>
+              <h2 className='black-text'>About us</h2>
+              <ul>
+                <li><a href="">Case studies</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Career</a></li>
+              </ul>
+
+            </div>
+
+            <div className='info-card'>
+              <h2 className='black-text'>Technology</h2>
+              <ul>
+                <li><a href="">Next-js</a></li>
+                <li><a href="">Sanity</a></li>
+                <li><a href="">Content ful</a></li>
+                <li><a href="">Vercel</a></li>
+                <li><a href="">Netlify</a></li>
+              </ul>
+
+            </div>
+
+            <div className='info-card'>
+              <h2 className='black-text'>Locations</h2>
+
+              <ul>
+                <li><a href="#">India</a></li>
+                <li><a href="#">Australia</a></li>
+                <li><a href="#">Brazil</a></li>
+                <li><a href="#">Canada</a></li>
+              </ul>
+
+            </div>
+
+            <div className='info-card'>
+              <h2 className='black-text'>Headquarters</h2>
+              <p className='info-card-p'>Codescandy, 412, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka, India 560025</p>
+            </div>
+
+          </div>
+        </section>
+        {/* info end */}
+
+
+        {/* footer end start */}
+
+        <section className='footer-end-section'>
+
+
+          <div className='footer-end-container container'>
+            <img src={NavbarLogo} alt="" />
+            <p>Copyright © 2024 <span className='span-purple-text'> Block Bootstrap 5 Theme</span> | Designed by <span className='span-purple-text'> CodesCandy</span></p>
+
+
+            <div className='contact-apps-container'>
+              <a href=""><FaInstagram /></a>
+              <a href=""><FaTwitter /></a>
+              <a href="https://www.youtube.com/"><FaYoutube /></a>
+              <a href=""><FaLinkedin /></a>
+            </div>
+          </div>
+
+        </section>
+
+        {/* footer-end end */}
+
+
+      </footer>
     </>
   )
 }
